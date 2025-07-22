@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Logged in users:"
+who
+
+echo "Top 5 running processes:"
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 6
